@@ -3,6 +3,8 @@
 Una plantilla responsive y fácil de editar para el workshop. Funciona en web,
 Android, iOS y escritorio con una sola base de código.
 
+![Vista previa del portafolio de Gian Sandoval](assets/images/portada.png)
+
 ## Personalízala en 3 pasos
 
 1. Abre `lib/config/portfolio_config.dart`.
