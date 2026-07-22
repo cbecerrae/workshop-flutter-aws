@@ -1,69 +1,83 @@
-# Plantilla de portafolio Flutter
+# Meetup #3 - Tu primer despliegue en AWS Cloud
 
-Una plantilla responsive y fácil de editar para el workshop. Funciona en web,
-Android, iOS y escritorio con una sola base de código.
+![Banner del evento](https://secure.meetupstatic.com/photos/event/7/d/e/8/highres_535292232.webp)
 
-![Vista previa del portafolio de Gian Sandoval](assets/images/portada.png)
+---
 
-## Personalízala en 3 pasos
+## 👋 Bienvenida
 
-1. Abre `lib/config/portfolio_config.dart`.
-2. Cambia tu nombre, descripción, correo, redes, habilidades y proyectos.
-3. Reemplaza `assets/images/profile.png` por tu foto (mantén el mismo nombre).
+¡Bienvenido/a al workshop más práctico del AWS User Group Piura!
 
-Eso es todo. No necesitas tocar los widgets para usar la plantilla.
+En esta sesión vas a crear tu propia aplicación web con Flutter y desplegarla en AWS Cloud usando dos enfoques diferentes. La idea es que no solo escuches conceptos, sino que puedas ponerlos en práctica directamente desde tu laptop.
 
-## Ejecutar el proyecto
+---
 
-```bash
-flutter pub get
-flutter run -d chrome
-```
+## 📚 Estructura del Workshop
 
-Para comprobar que todo está correcto:
+El workshop se divide en **tres partes**:
 
-```bash
-flutter analyze
-flutter test
-```
+### 1. 🛠️ Prerequisitos — [`flutter-prerequisites.md`](flutter-prerequisites.md)
 
-## Estructura
+Guía de instalación de Flutter y todas sus dependencias. **Si ya las instalaste antes del evento, genial!** Si no, revisa esta guía para ponerte al día.
+
+### 2. 💻 Workshop #1: Flutter — [`flutter-workshop.md`](flutter-workshop.md)
+
+Personaliza tu portafolio web con Flutter, compílalo y visualízalo localmente.
+
+🎤 Instructor: [Giancarlos Sandoval](https://www.linkedin.com/in/giansandoval/)
+
+### 3. ☁️ Workshop #2: AWS Cloud — [`aws-workshop.md`](aws-workshop.md)
+
+Despliega tu aplicación en AWS usando dos enfoques:
+- **Amazon S3** como sitio web estático (SPA)
+- **Amazon EC2** con un web server levantado manualmente
+
+🎤 Instructor: [Cristhian Becerra](https://www.linkedin.com/in/cristhian-becerra/)
+
+---
+
+## 📁 Estructura del proyecto
 
 ```text
-lib/
-├── config/
-│   └── portfolio_config.dart    # Toda tu información editable
-├── core/
-│   ├── theme/                   # Colores y estilos globales
-│   └── utils/                   # Apertura segura de enlaces
-├── features/portfolio/
-│   ├── portfolio_page.dart
-│   └── widgets/                 # Secciones reutilizables
-├── models/                      # Modelos de proyectos, redes y habilidades
-├── app.dart
-└── main.dart
+workshop-flutter-aws/
+├── lib/
+│   ├── config/
+│   │   └── portfolio_config.dart    # 👈 Tu información editable
+│   ├── core/
+│   │   ├── theme/                   # Colores y estilos globales
+│   │   └── utils/                   # Apertura segura de enlaces
+│   ├── features/portfolio/
+│   │   ├── portfolio_page.dart
+│   │   └── widgets/                 # Secciones reutilizables
+│   ├── models/                      # Modelos de datos
+│   ├── app.dart
+│   └── main.dart
+├── assets/images/                   # Imágenes (profile.png, portada.png)
+├── flutter-prerequisites.md         # Guía de instalación
+├── flutter-workshop.md              # Workshop Flutter
+├── aws-workshop.md                  # Workshop AWS
+└── README.md                        # Este archivo
 ```
 
-## Consejos para el workshop
+---
 
-- Usa una imagen cuadrada para `profile.png` (por ejemplo, 800 × 800 px).
-- Escribe las URLs completas, incluyendo `https://`.
-- Para el correo solo cambia `email`; la plantilla crea el enlace `mailto:`.
-- Puedes agregar o quitar elementos de las listas `projects`, `skillGroups`,
-  `stats` y `socials`.
-- Para cambiar la identidad visual edita `AppColors` en
-  `lib/core/theme/app_theme.dart`.
+## 🎯 ¿Qué lograrás hoy?
 
-## Diseño responsive
+Al terminar el workshop tendrás:
+- ✅ Tu portafolio web personalizado con Flutter
+- ✅ Tu app desplegada en un bucket S3 como sitio web estático
+- ✅ Tu app corriendo en una instancia EC2 accesible desde internet
 
-- Móvil: menú compacto y tarjetas en una columna.
-- Tablet: tarjetas en dos columnas.
-- Escritorio: navegación completa y grillas de tres columnas.
+---
 
-La imagen incluida es un placeholder generado para la plantilla y está pensada
-para ser reemplazada por cada participante.
+## 🔗 Links útiles
 
-## Licencia
+- 📹 [Tutorial de instalación de Flutter](https://youtu.be/uyZRzYLujCY)
+- 🌐 [Evento en Meetup](https://www.meetup.com/aws-user-group-piura/events/315600351/)
+- 💬 Comunidad: **#AWSUserGroupPiura**
 
-Este proyecto se distribuye bajo la [Licencia MIT](LICENSE). Puedes usarlo,
-modificarlo y compartirlo libremente conservando el aviso de licencia.
+---
+
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la [Licencia MIT](LICENSE).
